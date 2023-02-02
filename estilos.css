@@ -1,0 +1,533 @@
+/*
+Fuente
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;1,300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto+Mono';
+  text-decoration: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*
+barra de devegacion
+*/
+
+#inicio{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(iconos/fondo.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#inicio .contenido header{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed ;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header  h3{
+  text-align: center;
+  color: antiquewhite;
+}
+
+#inicio .contenido header .contenido-header  h3:hover{
+  text-align: center;
+  transition: .5s;
+  color: #2e8b57;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+  text-decoration: none;
+  margin: 0 12px;
+  color: antiquewhite;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+#inicio .contenido header .contenido-header #redes a{
+  text-decoration: none;
+  color: antiquewhite;
+  display: inline-block;
+  margin-left: 10px;
+  transition: .5s;
+ 
+}
+
+#inicio .contenido header .contenido-header #redes a:hover{
+  color: seagreen;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover{
+  color: seagreen;
+}
+
+#inicio .contenido header .contenido-header .seleccionado{
+  color: seagreen;
+}
+
+#redes{
+  width: 300px;
+}
+
+.iconos{
+  height: 10%;
+  width: 3%;
+  transition: 0.5s;
+}
+
+#icono-nav{
+  color: white;
+  display: none;
+}
+
+/*
+presentacion
+*/
+#inicio .contenido .presentacion{
+  max-width: 1500px;
+  height: 100vh;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenido{
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+  font-size: 30px;
+  color: seagreen;
+}
+
+.presentacion .descripcion{
+  max-width: 750px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.presentacion span{
+  text-transform: uppercase;
+}
+
+
+/*
+sobre mi
+*/
+
+#sobremi{
+  max-width: 1500px;
+  margin: auto;
+  padding: 150px 15px 230px;
+  color: black;
+  display: flex;
+}
+
+#sobremi .contenedor-foto{
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img{
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: darkgray;
+}
+
+#sobremi .sobremi{
+  margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo{
+  font-size: 22px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: seagreen;
+  text-decoration-thickness: 5px;
+  padding-bottom: 20px;
+}
+
+#sobremi .sobremi h2{
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#sobremi .sobremi .presentacion{
+  font-size: 1rem;
+}
+
+#sobremi .sobremi h2 span{
+  color: seagreen;
+}
+
+#sobremi .sobremi p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  color: black;
+}
+
+#sobremi .sobremi a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#sobremi .sobremi a:hover{
+  background-color: #2e8b57;
+}
+
+/*
+Habilidades
+
+
+#shabilidades .contenedor-habilidades {
+  background: linear-gradient(seagreen, black);
+}
+
+#shabilidades .contenedor-habilidades .skill{
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+#shabilidades .contenedor-habilidades .skill .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#shabilidades .contenedor-habilidades .skill .lista{
+  display: inline-block;
+  margin-right: 20px;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+}
+
+#shabilidades .contenedor-habilidades .skill .barra{
+  background-color: antiquewhite;
+  width: 100%;
+  height: 6px;
+  margin: 10px 0;
+}
+*/
+
+/*
+Educacion
+*/
+
+#educacion{
+  max-width: 1500px;
+  margin: auto;
+  padding: 150px 15px 230px;
+  color: black;
+  display: flex;
+}
+
+#educacion .contenedor-foto{
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+#educacion .contenedor-foto img{
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: darkgray;
+}
+
+#educacion .educacion{
+  margin: 0 40px;
+}
+
+#educacion .educacion .titulo{
+  font-size: 22px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: seagreen;
+  text-decoration-thickness: 5px;
+  padding-bottom: 20px;
+}
+#educacion .educacion .cursos-titulo{
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+#educacion .educacion .ano{
+  margin-bottom: .5rem;
+}
+
+#educacion .educacion a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#educacion .educacion a:hover{
+  background-color: #2e8b57;
+}
+
+/*
+Habilidades
+*/
+
+#habilidades{
+  max-width: 1500px;
+  margin: auto;
+  padding: 150px 15px 230px;
+  color: black;
+  display: flex;
+}
+
+#habilidades .contenedor-foto{
+  max-width: 400px;
+  margin-right: 80px;
+}
+
+#habilidades .contenedor-foto img{
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: darkgray;
+}
+
+#habilidades .habilidades{
+  margin: 0 40px;
+}
+
+#habilidades .habilidades .titulo{
+  font-size: 22px;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: seagreen;
+  text-decoration-thickness: 5px;
+  padding-bottom: 20px;
+}
+
+#habilidades .habilidades .logos{
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+/*
+footer
+*/
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+}
+
+footer a:hover{
+color: seagreen;
+}
+
+/*
+Responsive
+*/
+
+@media screen and (max-width:820px){
+  #redes{
+    display: none;
+  }
+  nav{
+    display: none;
+  }
+  nav.responsive{
+    display: block;
+    background-color: rgba(0,0,0, 0.8);  
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+  #icono-nav{
+    display: block;
+  }
+  #inicio .contenido .presentacion h2{
+    font-size: 25px;
+  }
+
+/*sobre mi*/
+
+  #sobremi{
+    padding: 50px 0;
+    display: block;
+  }
+  #sobremi .contenedor-foto{
+    max-width: 200px;
+    margin: auto;
+  }
+  #sobremi .contenedor-foto img{
+    padding: 8px;
+  }
+  #sobremi .sobremi .titulo{
+    text-align: center;
+  }
+  #sobremi .sobremi h2{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #sobremi .sobremi .btnCv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #sobremi .sobremi a{
+    display: inline-block;
+  }
+
+  /*Educacion*/
+
+  #educacion{
+    padding: 50px 0;
+    display: block;
+  }
+
+  #educacion .contenedor-foto{
+    max-width: 200px;
+    margin: auto;
+  }
+
+  #educacion .contenedor-foto img{
+    padding: 8px;
+  }
+
+  #educacion .educacion .titulo{
+    text-align: center;
+  }
+
+  #educacion .educacion h2{
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #educacion .educacion p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+  #educacion .educacion .btnCertificado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*habilidades*/
+
+  #habilidades{
+    padding: 50px 0;
+    display: block;
+  }
+
+  #habilidades .contenedor-foto{
+    max-width: 200px;
+    margin: auto;
+  }
+
+  #habilidades .contenedor-foto img{
+    padding: 8px;
+  }
+
+  #habilidades .habilidades .titulo{
+    text-align: center;
+  }
+
+  #habilidades .habilidades h2{
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #habilidades .habilidades p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  #habilidades .habilidades .imagenes{
+    display: flex;
+    justify-content: center;
+  }
+
+  #habilidades .habilidades a{
+    display: inline-block;
+  }
+
+}

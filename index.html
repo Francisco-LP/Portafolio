@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="estilos.css" type="text/css"/>
+  <link rel="stylesheet" href="modoOscuro.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/6ce6d5059e.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+
+
+  <!-- Seccion de inicio -->
+  <section id ="inicio">
+    <div class ="contenido">
+      <header>
+        <div class="contenido-header">
+            <a href="#inicio"><h3>Francisco Lagos</h3></a>
+            <nav id="nav">
+              <ul id="link">
+                <li><a href = "#inicio" onclick="seleccionar(this)">Inicio</a></li>
+                <li><a href = "#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                <li><a href = "#educacion" onclick="seleccionar(this)">Educacion</a></li>
+                <li><a href = "#habilidades" onclick="seleccionar(this)">Habilidades</a></li>
+              </ul>
+            </nav> 
+
+            <!--  Iconos del menu responsive-->
+            <div id = "icono-nav" onclick="responsivemenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <!-- Iconos de las redes sociales-->
+            <div id = "redes">
+              <a href="https://www.linkedin.com/in/francisco-lagos-ponce/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Francisco-LP" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+      </header>
+
+      <!--presenstacion -->
+      <div class="presentacion">
+        <!--<p class="bienvenido">Bienvenidos</p>-->
+        <h2>Hola, soy <span>Francisco Lagos</span>, Bienvenido a mi portafolio como desarrollador trainee</h2>
+        <p class ="descripcion">Estoy en busqueda de un camino en el mundo de la programacion, Constantemente me encuentro aprendiendo nuevas tecnologias de desarrollo.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--sobre mi-->
+  <section id="sobremi">
+    <div class="contenedor-foto">
+      <img src="iconos/me.png" alt="">
+    </div>
+    <div class="sobremi">
+      <p class="titulo">Sobre mi</p>
+      <h2>hola soy, <span><b>Francisco Lagos</b></span></h2>
+      <p class="presentacion">Analista programador del instituto profesional CIISA, en <b>búsqueda de práctica profesional.</b> Enfocado en el desarrollo personal, potenciar el aprendizaje y desarrollo continuo. 
+        Mi principal objetivo es formar parte de una empresa para crecer profesional y personalmente. Aprender todo lo que pueda sobre el desarrollo de software.</p>
+        <div class="btnCv">
+          <a href="assets/CV Francisco_Lagos .pdf" download="CV" target="_blank">Descargar CV</a>
+        </div>  
+    </div>
+  </section>
+
+  <!--habilidades
+  <section id="shabilidades">
+    <div class="contenedor-habilidades" id="skill">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista">HTML</span></p>
+          <span class="porcentaje">60%</span>
+        </div>
+        <div class="barra">
+          <div id="html"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista">CSS</span></p>
+          <span class="porcentaje">50%</span>
+        </div>
+        <div class="barra">
+          <div id="css"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista">PYTHON</span></p>
+          <span class="porcentaje">65%</span>
+        </div>
+        <div class="barra">
+          <div id="py"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista">BASE DE DATOS</span></p>
+          <span class="porcentaje">65%</span>
+        </div>
+        <div class="barra">
+          <div id="bd"></div>
+        </div>
+      </div>
+
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista">LINUX</span></p>
+          <span class="porcentaje">65%</span>
+        </div>
+        <div class="barra">
+          <div id="linux"></div>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+<!-- Educacion -->
+  <section id="educacion">
+    <div class="contenedor-foto">
+      <img src="iconos/colegio.jpg" alt="">
+    </div>
+    <div class="educacion">
+      <p class="titulo">Educación</p>
+      <h2>Técnico en Programación y Análisis de Sistemas</h2>
+      <p>Instituto Profesional CIISA</p>
+      <p>2020-2023</p>
+      <h2 class="cursos-titulo">Cursos</h2>
+      <p><b>Linux unhatched</b></p>
+      <p>Cisco networking academy</p>
+      <p class="ano">2020</p>
+      <p><b>It essentials</b></p>
+      <p>Cisco networking academy</p>
+      <p class="ano">2020</p>
+      <p><b>Ccna routing and switching: introducción a redes</b></p>
+      <p>Cisco networking academy</p>
+      <p class="ano">2020</p>
+      <div class="btnCertificado">
+        <a href="assets/certificado.pdf" download="Certificado de cursos" target="_blank">Certificados</a>
+      </div>
+      
+    </div>
+  </section>
+
+
+<!--Habilidades-->
+<section id="habilidades">
+  <div class="contenedor-foto">
+    <img src="iconos/skill.jpg" alt="">
+  </div>
+  <div class="habilidades">
+    <p class="titulo">Habilidades</p>
+    <h2>Las herramientas con las que trabaje en el instituto CIISA</h2>
+
+    <div class="imagenes">
+      <img src="iconos/html-5.png" alt="HTML" class="logos">
+      <img src="iconos/css.png" alt="CSS" class="logos">
+      <img src="iconos/js.png" alt="JavaScript" class="logos">
+      <img src="iconos/piton.png" alt="Python" class="logos">
+      <img src="iconos/react.png" alt="React" class="logos">
+      <img src="iconos/linux.png" alt="React" class="logos">
+    </div>
+      
+
+    </div>
+</section>
+
+<!--footer-->
+  <footer>
+    <div>
+      <a href="https://www.linkedin.com/in/francisco-lagos-648801203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Francisco-LP" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+  <script src="js.js"></script>
+</body>
+</html>
